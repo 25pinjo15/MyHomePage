@@ -13,7 +13,8 @@ module.exports = {
     "eslint:recommended",
     "plugin:vue/vue3-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
+    
+    "prettier",
   ],
 
   parser: "vue-eslint-parser",
@@ -24,11 +25,12 @@ module.exports = {
     sourceType: "module",
   },
 
-  plugins: ["vue", "@typescript-eslint"],
+  plugins: ["vue", "@typescript-eslint", "prettier"],
   rules: {
     // override/add rules settings here, such as:
     indent: ["error", 2],
     // This is added by me ========
+    "no-undef": "off",
     "no-empty": "off",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "off",
@@ -42,6 +44,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
+    "vue/multi-word-component-names": "off",
   },
-  ignorePatterns: ["*/cypress/*"],
+  ignorePatterns: ["*/cypress/*", "./houseData/*"],
 };

@@ -3,11 +3,14 @@
   "tabWidth": 2,
   "semi": true,
   "singleQuote": false,
+  "parser": "vue",
+  "parsingError": "ignore" ,
   "useTabs": false,
   "bracketSpacing": true,
   "printWidth": 120,
   "jsxSingleQuote": true,
   "no-empty-function": false,
+  
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
