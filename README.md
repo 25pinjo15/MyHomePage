@@ -56,6 +56,8 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br> Johny Cust
 
 - 🦾 TypeScript, of course
 
+- Prettier
+
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest), E2E Testing with [Cypress](https://cypress.io/) on [GitHub Actions](https://github.com/features/actions)
 
 - ☁️ Deploy on Netlify, zero-config
