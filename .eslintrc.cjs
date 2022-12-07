@@ -13,7 +13,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:vue/vue3-recommended",
     "plugin:@typescript-eslint/recommended",
-    
+    "@antfu",
     "prettier",
   ],
 
@@ -38,13 +38,14 @@ module.exports = {
     "vue/multiline-html-element-content-newline": "off",
     "vue/html-indent": ["error", 2],
     "vue/require-default-prop": "off",
-    "vue/singleline-html-element-content-newline": 0,
+    "vue/singleline-html-element-content-newline": "off",
     "vue/component-name-in-template-casing": ["error", "PascalCase"],
     "vue/no-unused-vars": "error",
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "vue/multi-word-component-names": "off",
+    "semi": ["error", "always", { "omitLastInOneLineBlock": true }],
   },
-  ignorePatterns: ["*/cypress/*", "./houseData/*"],
+  ignorePatterns: ["**/cypress/*", "./houseData/*", "**/locales/*", "**/.vscode/*", "**/.github/*"],
 };
